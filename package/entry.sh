@@ -91,7 +91,7 @@ if [ "$1" == "kubelet" ]; then
     fi
     for i in /sys/fs/cgroup/*; do
         if [ -d $i ]; then
-             mkdir -p $i/kubepods
+             mkdir $i/kubepods
         fi
     done
 fi
